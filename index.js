@@ -11,11 +11,11 @@ const bodyParser = require('body-parser')
     app.use(bodyParser.urlencoded({extended: false}))
     app.use(bodyParser.json())
 //Routes
-
+    // Form route
     app.get('/cad', function(req, res){
         res.render('form')
     }) 
-    
+    // Send form route
     app.post('/addform', function(req, res){
         res.send('Form Received')
     })
