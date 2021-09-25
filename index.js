@@ -17,9 +17,9 @@ const bodyParser = require('body-parser')
     }) 
     // Send form route
     app.post('/addform', function(req, res){
-        res.send('Name: '+ req.body.title + ' Age: '+ req.body.age + ' Email: '+ req.body.email)
+        res.send('Form Received')
     })    
-
+// Server running
 app.listen(8081, function(){
     console.log('Server running at port http://localhost:8081');
 })
